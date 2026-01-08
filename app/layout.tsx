@@ -1,14 +1,14 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { GeistSans, GeistMono } from "geist/font"
 import { Analytics } from "@vercel/analytics/next"
 import { Toaster } from "@/components/ui/toaster"
 import { Suspense } from "react"
 import "./globals.css"
 import { Abel as V0_Font_Abel } from "next/font/google"
 
-const geistSans = Geist({ subsets: ["latin"] })
-const geistMono = Geist_Mono({ subsets: ["latin"] })
+const geistSans = GeistSans
+const geistMono = GeistMono
 const _abel = V0_Font_Abel({ subsets: ["latin"], weight: ["400"], variable: "--v0-font-abel" })
 
 export const metadata: Metadata = {
